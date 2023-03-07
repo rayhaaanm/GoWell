@@ -1,0 +1,136 @@
+
+body{
+    height: 100% ;
+    width: 100%;
+    background-color: gray;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.Container{
+    display: flex; 
+    flex-direction: row;
+    align-content: flex-start;
+}
+.container2{
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+.sidebar{
+    background-color: white;
+    border-radius: 10px; 
+    height: 100%; 
+    width: 300px;
+    position: fixed;
+}
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar_menu{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+    
+}
+.sidebar_menu p {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+}
+.sidebar_setting{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+}
+.sidebar_setting p {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+}
+.profile{
+    width: 250%; 
+    box-sizing: border-box;
+    height: 1000px; 
+    background-color: white; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: row;
+    margin-left: 180px;
+}
+a:link { 
+    text-decoration: none; 
+}
+
+.Avatar_Border{
+    width: 110px; 
+    height: 110px; 
+    border-radius: 50%; 
+    background-color: aqua;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.username{
+    background-position: left center; 
+    margin-left: 10px;
+    margin-top: 45px;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px; 
+    height: 25px; 
+    border-radius: 20px; 
+    background-color: aquamarine;
+    font-size: 10px;
+    
+}
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+}
+.Judul{
+    padding-left: 10px;
+}
+.Judul p{
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+.Judul p span{
+    font-size: 40px;
+}
+
+#Profile{
+    height: 50px;
+    margin-left: 10px;
+}
+#Dashboard{
+    height: 50px;
+    margin-left: 10px;
+}
+#Analytics{
+    height: 50px;
+    margin-left: 10px;
+}
+#News{
+    height: 50px;
+    margin-left: 10px;
+}
+#Support{
+    height: 50px;
+    margin-left: 10px;
+}
