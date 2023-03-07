@@ -1,0 +1,102 @@
+body{
+    height: 1080px ;
+    width: 1920px;
+    background-color: grey;
+}
+.Container{
+    display: flex; 
+    flex-direction: row;
+    align-content: flex-start;
+}
+.container2{
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+.sidebar{
+    background-color: white;
+    border-radius: 10px; 
+    height: 100%; 
+    width: 150px;
+}
+.profile{
+    width: 500%; 
+    box-sizing: border-box;
+    height: 120px; 
+    background-color: white; 
+    border-radius: 10px; 
+    display: flex; 
+    flex-direction: row;
+    margin-left: 20px;
+}
+.Avatar_Border{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    background-color: aqua;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.username{
+    background-position: left center; 
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px; 
+    height: 25px; 
+    border-radius: 20px; 
+    background-color: aquamarine;
+    font-size: 10px;
+    
+}
+.keterangan{
+    position: absolute;
+    width: 500%; 
+    height: 100%; 
+    background-color: white; 
+    margin-top: 10px; 
+    margin-left: 20px; 
+    border-radius: 10px;
+    top: 130px;
+    left: 150px;
+}
+.Menu{
+    display: flex;
+    flex-direction: column;
+}
+.Judul{
+    padding-left: 10px;
+}
+.sidebar_menu{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.sidebar_menu p {
+    position: relative;
+    top: -10px;
+}
+#Profile{
+    height: 30px;
+    margin-left: 10px;
+}
+#Dashboard{
+    height: 30px;
+    margin-left: 10px;
+}
+#Analytics{
+    height: 30px;
+    margin-left: 10px;
+}
+#News{
+    height: 30px;
+    margin-left: 10px;
+}
+#Support{
+    height: 30px;
+    margin-left: 10px;
+}
