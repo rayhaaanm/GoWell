@@ -12,7 +12,6 @@ body{
     align-content: flex-start;
 }
 .container2{
-    width: 75.5%;
     position: absolute;
     left: 150px;
     top: 10px;
@@ -60,44 +59,42 @@ body{
     top: -10px;
     font-size: 20px;
 }
-.profile{
-    width: 100%; 
+.blank{
+    width: 76%; 
     box-sizing: border-box;
-    height: 1000px; 
+    height: auto;
     background-color: white; 
     border-radius: 10px; 
-    display: flex; 
     flex-direction: row;
     margin-left: 180px;
+    margin-right: 40px;
+}
+.container3{
+    display: flex;
+    padding-left: 10px;
+}
+.data_shape{
+    width: 200px;
+    height: 250px;
+    background-color: #57B9D4;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+}
+.column p{
+    font-weight: bold;
+    color: aliceblue;
 }
 a:link { 
     text-decoration: none; 
 }
 
-.Avatar_Border{
-    width: 110px; 
-    height: 110px; 
-    border-radius: 50%; 
-    background-color: aqua;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.username{
-    background-position: left center; 
-    margin-left: 10px;
-    margin-top: 45px;
-}
-.edit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px; 
-    height: 25px; 
-    border-radius: 20px; 
-    background-color: aquamarine;
-    font-size: 10px;
-    
-}
+
 
 .Menu{
     display: flex;
@@ -135,4 +132,16 @@ a:link {
 #Support{
     height: 50px;
     margin-left: 10px;
+}
+#jenis{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+#angka{
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#satuan{
+    font-size: 20px;
 }
