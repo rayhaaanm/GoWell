@@ -12,7 +12,7 @@ body{
     align-content: flex-start;
 }
 .container2{
-    width: 75.5%;
+    width: 100%;
     position: absolute;
     left: 150px;
     top: 10px;
@@ -24,6 +24,23 @@ body{
     width: 300px;
     position: fixed;
 }
+.sidebar_menu button{
+    margin-top: 10px;
+    border-radius: 20px;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    color: #1F4F70;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sidebar_menu button:hover,.form button:active,.form button:focus {
+    background: #57B9D4;
+  }
 .sidebar-nav {
     padding: 0;
     margin: 0;
@@ -43,73 +60,34 @@ body{
     list-style: none;
     
 }
-.sidebar_menu button{
-    margin-top: 10px;
-    border-radius: 20px;
-    outline: 0;
-    background: transparent;
-    width: 100%;
-    border: 0;
-    padding: 5px;
-    color: #1F4F70;
-    font-size: 14px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 20px;
-}
-.sidebar_menu button:hover,.form button:active,.form button:focus {
-    background: #57B9D4;
-  }
-.sidebar_setting{
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    list-style: none;
-}
-.sidebar_setting p {
-    position: relative;
-    top: -10px;
-    font-size: 20px;
-}
-.profile{
-    width: 100%; 
+.blank{
+    width: 76%; 
     box-sizing: border-box;
-    height: 1000px; 
+    height: auto;
     background-color: white; 
     border-radius: 10px; 
-    display: flex; 
     flex-direction: row;
     margin-left: 180px;
+    margin-right: 40px;
 }
+.container3{
+    display: flex;
+    padding-left: 10px;
+}
+.container4{
+    display: flex;
+    padding-left: 10px;
+    padding-top: 30px;
+}
+.container4 p{
+    padding-left: 10px;
+}
+
 a:link { 
     text-decoration: none; 
 }
 
-.Avatar_Border{
-    width: 110px; 
-    height: 110px; 
-    border-radius: 50%; 
-    background-color: aqua;
-    margin-left: 30px;
-    margin-top: 10px;
-}
-.username{
-    background-position: left center; 
-    margin-left: 10px;
-    margin-top: 45px;
-}
-.edit{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 55px; 
-    height: 25px; 
-    border-radius: 20px; 
-    background-color: aquamarine;
-    font-size: 10px;
-    
-}
+
 
 .Menu{
     display: flex;
@@ -131,4 +109,8 @@ a:link {
 #Icon{
     height: 50px;
     margin-left: 10px;
+}
+#thumbnail_news{
+    width: 49%;
+    margin-right: 10px;
 }

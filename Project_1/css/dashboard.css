@@ -12,6 +12,7 @@ body{
     align-content: flex-start;
 }
 .container2{
+    width: 100%;
     position: absolute;
     left: 150px;
     top: 10px;
@@ -19,10 +20,27 @@ body{
 .sidebar{
     background-color: white;
     border-radius: 10px; 
-    height: 100%; 
+    height: 62%; 
     width: 300px;
     position: fixed;
 }
+.sidebar_menu button{
+    margin-top: 10px;
+    border-radius: 20px;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    color: #1F4F70;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sidebar_menu button:hover,.form button:active,.form button:focus {
+    background: #57B9D4;
+  }
 .sidebar-nav {
     padding: 0;
     margin: 0;
@@ -41,23 +59,6 @@ body{
     align-content: center;
     list-style: none;
     
-}
-.sidebar_menu p {
-    position: relative;
-    top: -10px;
-    font-size: 20px;
-}
-.sidebar_setting{
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    list-style: none;
-}
-.sidebar_setting p {
-    position: relative;
-    top: -10px;
-    font-size: 20px;
 }
 .blank{
     width: 76%; 
@@ -90,6 +91,10 @@ body{
     font-weight: bold;
     color: aliceblue;
 }
+.bar{
+    margin-top: 20px;
+    margin-left: 70px;
+}
 a:link { 
     text-decoration: none; 
 }
@@ -113,23 +118,7 @@ a:link {
     font-size: 40px;
 }
 
-#Profile{
-    height: 50px;
-    margin-left: 10px;
-}
-#Dashboard{
-    height: 50px;
-    margin-left: 10px;
-}
-#Analytics{
-    height: 50px;
-    margin-left: 10px;
-}
-#News{
-    height: 50px;
-    margin-left: 10px;
-}
-#Support{
+#Icon{
     height: 50px;
     margin-left: 10px;
 }
