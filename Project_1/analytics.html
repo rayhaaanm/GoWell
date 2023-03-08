@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage: GoWell</title>
-    <link rel="stylesheet" href="css/profile.css">
+    <title>Analytics: GoWell</title>
+    <link rel="stylesheet" href="css/analytics.css">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
     rel='stylesheet' type='text/css'>
 </head>
 <body>
+    <script src="js/calculator.js"></script>
+ </script>
     <div class="Container">
         
         <aside class="sidebar">
@@ -49,20 +51,36 @@
 </ul>
 </aside>
     <div class="container2">
-        <div class="profile">
-        <div class="Avatar_Border">
-        
-        </div>
-        <div class="username">
-            <span >
-                Lalisa Manoban <br>
-            </span>
-            <div class="edit">
-            Edit Profile
+        <div class="blank">
+            <div class="shape2">
+                <div class="shape">
+                    <div class="column">
+                        <center>
+                            <p>Hitung Berat Badan Idealmu</p>
+                            <form name="ffrom">
+                            <input type="text" name="Tinggi" placeholder="Tinggi Badan">
+                            <input type="text" name="Berat"  placeholder="Berat Badan">
+                            <input type="button" value="Hitung" onclick="hitungBeratBadanIdeal()">
+                            <input type="reset" value="Reset">
+                            </form>
+    
+                        </center>
+                    </div>
+                    
+                </div>
+                    <div class="shape3">
+                        <div class="column">
+                        <center>
+                            <form name="fr">
+                                <p>Hasil Perhitungan</p>
+                            <input type="text" name="Hasil">
+                            </form>
+                        </center>
+                    </div>
+                    </div>
+
             </div>
         </div>
-        
-    </div>
         
     </div>
     
