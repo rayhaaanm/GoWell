@@ -56,11 +56,13 @@
                 <div class="shape">
                     <div class="column">
                         <center>
-                            <p>Hitung Berat Badan Idealmu</p>
+                            <p>Input your <br>
+                                Weight and  Height                                
+                            </p>
                             <form name="ffrom">
-                            <input type="text" name="Tinggi" placeholder="Tinggi Badan">
-                            <input type="text" name="Berat"  placeholder="Berat Badan">
-                            <input type="button" value="Hitung" onclick="hitungBeratBadanIdeal()">
+                            <input type="text" name="Tinggi" placeholder="Height Body">
+                            <input type="text" name="Berat"  placeholder="Weight Body">
+                            <input type="button" value="Count" onclick="hitungBeratBadanIdeal()">
                             <input type="reset" value="Reset">
                             </form>
     
@@ -72,8 +74,8 @@
                         <div class="column">
                         <center>
                             <form name="fr">
-                                <p>Hasil Perhitungan</p>
-                            <input type="text" name="Hasil">
+                                <p id="Hasil-hitung">Result</p>
+                            <textarea name="Hasil" id="" cols="30" rows="10"></textarea>
                             </form>
                         </center>
                     </div>
