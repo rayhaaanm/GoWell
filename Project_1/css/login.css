@@ -58,9 +58,6 @@ html, body{
     color: #57B9D4;
     text-decoration: none;
   }
-  .form .register-form {
-    display: none;
-  }
   .container {
     position: relative;
     z-index: 1;

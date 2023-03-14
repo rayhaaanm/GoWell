@@ -8,20 +8,22 @@
     <link rel="stylesheet" href="css/signup.css">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
     rel='stylesheet' type='text/css'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
+  <script src="js/signup.js"></script>
     <div class="SignUp-page">
         <div class="form">
             <div class="GoWell">
                 <span style="color: #1F4F70;">Sign</span><span style="color: #57B9D4;">Up</span>
             </div>
           <form class="SignUp-form">
-            <input type="text" placeholder="Full Name"/>
-            <input type="text" placeholder="Username"/>
-            <input type="text" placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <input type="password" placeholder="Confirm Password"/>
-            <a href="login.html"><button type="button">Sign Up</button></a>
+            <input type="text" placeholder="Full Name" id="name"/>
+            <input type="text" placeholder="Username" id="user"/>
+            <input type="text" placeholder="Email" id="email"/>
+            <input type="password" placeholder="Password" id="pass"/>
+            <input type="password" placeholder="Confirm Password" id="repass"/>
+            <button type="button" onclick="validate()">Sign Up</button>
           </form>
         </div>
       </div>
