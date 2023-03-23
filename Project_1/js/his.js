@@ -4,6 +4,7 @@ const ctx3 = document.getElementById('histogram3').getContext('2d');
 const ctx4 = document.getElementById('histogram4').getContext('2d');
 const ChartOptions = {
   scales: {
+    indexAxis: 'y',
     xAxes: [{
       barPercentage: 0.5,
       categoryPercentage: 1.5,
@@ -19,18 +20,28 @@ const ChartOptions = {
     }],
     yAxes: [{
       ticks: {
-        beginAtZero: true
+        beginAtZero: false
       }
     }]
   }
 };
 
-
-var Glucose = {
-  label: 'Kadar Glukosa',
-  data: [120, 50, 40, 36, 120,200,150,70,190,130,100,150],
-  backgroundColor: '#6CBDCB',
+var GlucoseNormal = {
+  type: 'line',
+  label: 'Kadar Glukosa Normal',
+  data: 
+   [120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120, 120],
+  borderColor: 'green',
+  fill: false,
 }
+
+
+  var Glucose = {
+    type: 'bar',
+    label: 'Kadar Glukosa',
+    data: [120, 50, 40, 36, 120,200,150,70,190,130,100,150],
+    backgroundColor: '#6CBDCB',
+  }
 var Kolesterol = {
   label: "Kadar Kolesterol",
   data: [140, 60, 70, 50, 120,110,160,70,190,130,120,150],
@@ -53,10 +64,9 @@ var AsamUrat = {
 
 
 const chart = new Chart(ctx,   {
-  type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [Glucose]
+    datasets: [Glucose,GlucoseNormal]
   },
   options: ChartOptions
 });

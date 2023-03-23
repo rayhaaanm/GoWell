@@ -1,0 +1,121 @@
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 20px 100px;
+    background:  white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: center;
+    z-index: 99;
+}
+.navigation {
+    margin-right: 200px;
+}
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #1F4F70;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 40px; 
+
+    
+}
+
+.navigation a::after {
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #57B9D4;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover:after {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.logo span{
+    font-weight: bold;
+    font-size: 40px;
+}
+#Go{
+    color: #1F4F70;
+}
+#Well{
+    color: #57B9D4;
+}
+.Logo2{
+    position: absolute;
+    font-size: 150px;
+    font-weight: bold;
+    top: 270px;
+    left: 460px;
+    text-shadow: 1px 1px 50px grey;
+}
+.tagline{
+    font-size: 60px;
+    color: #1F4F70;
+}
+.section-1 img{
+    filter: opacity(40%);
+}
+.section-2{
+    display: flex;
+    flex-direction: column;
+    font-weight: 540;
+    color: #1F4F70;
+    font-size: 35px;
+}
+.container-news{
+    display: flex;
+    flex-direction: row;
+    width: 1204px;
+    height: 363px;
+    margin-left: 130px;
+}
+.box-news{
+    width: 300px;
+    height: 350px;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.thumbnail{
+    height: 60%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.thumbnail img{
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.isi{
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.isi center{
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
