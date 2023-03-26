@@ -55,4 +55,17 @@ html, body{
     border-radius: 20px;
     
   }
+  .close-btn{
+    display: flex;
+    justify-content: right;
+  }
+  .close-btn a:hover{
+    color: #57B9D4;
+    cursor: pointer;
+  }
+  .close-btn a{
+    text-decoration: none;
+    color: #b3b3b3;
+  }
+  
   

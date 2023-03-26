@@ -34,6 +34,30 @@ var GlucoseNormal = {
   borderColor: 'green',
   fill: false,
 }
+var KolesterolNormal = {
+  type: 'line',
+  label: 'Kadar Kolesterol Normal',
+  data: 
+   [67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67, 67],
+  borderColor: 'green',
+  fill: false,
+}
+var BloodNormal = {
+  type: 'line',
+  label: 'Kadar Tekanan Darah Normal',
+  data: 
+   [98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98, 98],
+  borderColor: 'green',
+  fill: false,
+}
+var AcidNormal = {
+  type: 'line',
+  label: 'Kadar Asam Urat Normal',
+  data: 
+   [4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5, 4.5],
+  borderColor: 'green',
+  fill: false,
+}
 
 
   var Glucose = {
@@ -75,7 +99,7 @@ const chart2 = new Chart(ctx2,   {
   type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [Kolesterol]
+    datasets: [Kolesterol,KolesterolNormal]
   },
   options: ChartOptions
 });
@@ -84,7 +108,7 @@ const chart3 = new Chart(ctx3,   {
   type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [TekananDarah]
+    datasets: [TekananDarah,BloodNormal]
   },
   options: ChartOptions
 });
@@ -93,7 +117,7 @@ const chart4 = new Chart(ctx4,   {
   type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [AsamUrat]
+    datasets: [AsamUrat,AcidNormal]
   },
   options: ChartOptions
 });
