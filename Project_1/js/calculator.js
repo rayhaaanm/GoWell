@@ -3,7 +3,6 @@ function hitungBeratBadanIdeal()
                 var TinggiBadan = parseFloat(document.ffrom.Tinggi.value);
                 var BeratBadan = parseFloat(document.ffrom.Berat.value);
                 var hs = "";
-                var num = 0;
                 img1 = new Image()
                 img1.src = 'images/Chart.png'
                 img2 = new Image()
