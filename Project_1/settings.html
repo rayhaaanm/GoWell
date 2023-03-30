@@ -8,8 +8,8 @@
     <title>Document</title>
 </head>
 <body>
+    <script src="./js/setting.js"></script>
     <div class="Container">
-        
         <aside class="sidebar">
             <ul class="sidebar-nav">
         <li class="Judul">
@@ -45,37 +45,74 @@
          
     </ul>
     </aside>
-    <div class="container2"  >
+    <div class="container2">
         <div class="blank">
         <p>User Settings</p>
         <div class="profile">
-            <div class="profile-picture">
-
-            </div>
+            <img class="profile-picture"src="./images/lisa.jpg" >
+            <div class="profile-column">
             <div class="profile-desc">
-
+                Lalisa Manoban
             </div>
+            <div class="profile-button">
+                <a href="#" onclick="OpenForm()" >
+                    <div class="button" id="edit-photo" >
+                        <img src="./images/pensil.png">
+                        <p>Edit Photo</p>
+                    </div>
+                </a>
+                <a href="index.html" >
+                    <div class="button" id="Log-Out">
+                        <img src="./images/out.png" >
+                        <p>Log Out</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
         </div>
         <span>General Information</span>
         <div class="edit-profile">
             <input type="text" name="Name">
-            <img src="/Project_1/images/edit.png" >
             <span>Edit Name</span>
         </div>
         <div class="edit-profile">
             <input type="email" name="email">
-            <img src="/Project_1/images/edit.png" >
             <span>Edit Name</span>
         </div>
         <div class="edit-profile">
             <input type="password" name="pass">
-            <img src="/Project_1/images/edit.png" >
             <span>Edit Name</span>
         </div>
         </div>
+
+
+        
+        
         
     </div>
+    
+    
         
     </div>
+    <div class="bg" id="bg"></div>
+    <div class="pop-up" id="pop-up">
+        <center>
+            <p>Edit Profile Photo</p>
+            <img class="profile-picture"src="./images/lisa.jpg" >
+            <div class="pop-up-button" id="upload-photo">
+                Upload Photo
+            </div>
+            <div class="pop-up-button" id="delete-photo">
+                Delete Photo
+            </div>
+            <a href="#" onclick="CloseForm()">
+                <div class="pop-up-button" id="save-photo" >
+                    Save changes
+                </div>
+            </a>
+        </center>
+    </div>
+    
 </body>
 </html>

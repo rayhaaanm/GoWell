@@ -88,9 +88,10 @@ var AsamUrat = {
 
 
 const chart = new Chart(ctx,   {
+  type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [Glucose,GlucoseNormal]
+    datasets: [GlucoseNormal,Glucose]
   },
   options: ChartOptions
 });
@@ -99,7 +100,7 @@ const chart2 = new Chart(ctx2,   {
   type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [Kolesterol,KolesterolNormal]
+    datasets: [KolesterolNormal,Kolesterol]
   },
   options: ChartOptions
 });
@@ -108,7 +109,7 @@ const chart3 = new Chart(ctx3,   {
   type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [TekananDarah,BloodNormal]
+    datasets: [BloodNormal,TekananDarah]
   },
   options: ChartOptions
 });
@@ -117,7 +118,7 @@ const chart4 = new Chart(ctx4,   {
   type: 'bar',
   data: {
     labels: [ "Jan","Feb","Mar", "Apr","Mei","Juni","Juli","Aug","Sep","Okt","Nov","Dec"],
-    datasets: [AsamUrat,AcidNormal]
+    datasets: [AcidNormal,AsamUrat]
   },
   options: ChartOptions
 });
