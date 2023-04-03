@@ -212,6 +212,7 @@ a:link {
     font-size: 30px;
     color: #1F4F70;
 }
+
 .pop-up-button{
     height: 30px;
     width: 600px;
@@ -221,11 +222,21 @@ a:link {
     margin-top: 10px;
     font-weight: 500;
 }
+
+input[id="upload"]{
+    margin-top: 30px;
+    display: none;
+}
 #upload-photo{
+    font-size: 17px;
+    padding-top: 5px;
+    height: 40px;
+    border: none;
     background-color: #57B9D4;
 }
 #delete-photo{
     background-color: #838383;
+
 }
 #save-photo{
     background-color: #1F4F70;

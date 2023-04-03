@@ -49,7 +49,7 @@
         <div class="blank">
         <p>User Settings</p>
         <div class="profile">
-            <img class="profile-picture"src="./images/lisa.jpg" >
+            <img class="profile-picture" id="profile-picture"src="./images/lisa.jpg" >
             <div class="profile-column">
             <div class="profile-desc">
                 Lalisa Manoban
@@ -99,10 +99,9 @@
     <div class="pop-up" id="pop-up">
         <center>
             <p>Edit Profile Photo</p>
-            <img class="profile-picture"src="./images/lisa.jpg" >
-            <div class="pop-up-button" id="upload-photo">
-                Upload Photo
-            </div>
+            <img class="profile-picture" id="profile-picture-edit" src="./images/lisa.jpg" >
+            <button class="pop-up-button" id="upload-photo" onclick="OpenUpload()">Upload Photo</button>
+            
             <div class="pop-up-button" id="delete-photo">
                 Delete Photo
             </div>
@@ -112,6 +111,7 @@
                 </div>
             </a>
         </center>
+        <input  id="upload" onchange="EditProfile(event)" type="file">
     </div>
     
 </body>
