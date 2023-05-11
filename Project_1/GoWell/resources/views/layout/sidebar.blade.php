@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/{{ $css }}">
+    <link rel="stylesheet" href="{{ asset('css') }}/{{ $css }}">
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800' 
     rel='stylesheet' type='text/css'>
     <title>{{ $halaman }}</title>
@@ -21,26 +21,26 @@
             </p>
         </li>
         <li class="sidebar_menu">
-            <img id="Icon" src="images/User_alt_fill.png"> <a href="/profile" ><button type="button"> Profile</button type="button"></a>
+            <img id="Icon" src="{{ asset('images/user_alt_fill.png') }}"> <a href="/profile" ><button type="button"> Profile</button type="button"></a>
         
         </li>
         <li class="sidebar_menu">
-            <img id="Icon" src="images/darhboard.png" > <a href="/dashboard"><button type="button"> Dashboard</button type="button"></a>
+            <img id="Icon" src="{{ asset('images/darhboard.png') }}" > <a href="/dashboard"><button type="button"> Dashboard</button type="button"></a>
          
         </li>
         <li class="sidebar_menu">
-            <img id="Icon"src="images/Chart.png" > <a href="/analytics" ><button type="button"> Analytics</button type="button"></a>
+            <img id="Icon"src="{{ asset('images/Chart.png') }}" > <a href="/analytics" ><button type="button"> Analytics</button type="button"></a>
          
         </li>
         <li class="sidebar_menu">
-            <img id="Icon"src="images/Desk_alt.png"> <a href="/news" ><button type="button"> News</button type="button"></a>
+            <img id="Icon"src="{{ asset('images/Desk_alt.png') }}"> <a href="/news" ><button type="button"> News</button type="button"></a>
          
         </li>
         <li class="sidebar_menu">
-            <img id="Icon"src="images/Chat.png" > <a href="/support" ><button type="button"> Support</button type="button"></a>
+            <img id="Icon"src="{{ asset('images/Chat.png') }}" > <a href="/support" ><button type="button"> Support</button type="button"></a>
         </li>
         <li class="sidebar_menu">
-            <img id="Icon"src="images/Setting_line.png" > <a href="/setting" ><button type="button"> Settings</button type="button"></a>
+            <img id="Icon"src="{{ asset('images/Setting_line.png') }}" > <a href="/setting" ><button type="button"> Settings</button type="button"></a>
         </li>  
 
         
