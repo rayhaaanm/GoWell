@@ -70,31 +70,6 @@ body{
     margin-left: 180px;
     margin-right: 40px;
 }
-.container3{
-    display: flex;
-    padding-left: 10px;
-}
-.container4{
-    display: flex;
-    padding-left: 10px;
-    padding-top: 30px;
-}
-.isiarticle{
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-    text-decoration: none;
-}
-.isiarticle h2{
-    color: black;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
-.isiarticle h5{
-    font-weight: 400;
-    margin-top: 30px;
-}
 
 a:link { 
     text-decoration: none; 
@@ -127,3 +102,4 @@ a:link {
     width: 49%;
     margin-right: 10px;
 }
+

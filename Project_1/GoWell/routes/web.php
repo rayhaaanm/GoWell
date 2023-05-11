@@ -37,9 +37,17 @@ Route::get('/news', function () {
     return view('news',[
         'halaman' => 'GoWell : News',
         'css' => 'news.css',
-        'Article' => News::all()
+        'Articles' => News::all()
 
     ]);
+});
+Route::get('/news/{slug}', function($slug){
+    return view('DetailArticle',[
+        'halaman' => 'GoWell : News',
+        'css' => 'detail.css',
+        'Article' => News::find($slug),
+    ]);
+
 });
 Route::get('/profile', function () {
     return view('profile',[
