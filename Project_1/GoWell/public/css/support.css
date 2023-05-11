@@ -1,0 +1,207 @@
+
+body{
+    height: 100% ;
+    width: 100%;
+    background-color: gray;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.Container{
+    display: flex; 
+    flex-direction: row;
+    align-content: flex-start;
+}
+.container2{
+    width: 100%;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+.sidebar{
+    background-color: white;
+    border-radius: 10px; 
+    height: 65%; 
+    width: 300px;
+    position: fixed;
+}
+.sidebar_menu button{
+    margin-top: 10px;
+    border-radius: 20px;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    color: #1F4F70;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sidebar_menu button:hover,.form button:active,.form button:focus {
+    background: #57B9D4;
+  }
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar_menu{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+    
+}
+.blank{
+    position:relative;
+    width: 76%; 
+    box-sizing: border-box;
+    height: auto;
+    background-color: transparent; 
+    border-radius: 10px; 
+    flex-direction: row;
+    margin-left: 180px;
+    margin-right: 40px;
+}
+.profile_chat{
+    top:0;
+    /* scrolling out of view :-( */
+    z-index: 1;
+    display: flex;
+    border-radius: 30px;
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100px;
+}
+
+.profile-circleavatar{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.profile-identity{
+    display: flex;
+    flex-direction: row;
+    color: #1F4F70;
+}
+.profile-identity p {
+    margin-top: 28px;
+    margin-left: 10px;
+}
+.profile-identity p span{
+    font-weight: bold;
+}
+.icon-kanan{
+    margin: 20px 30px auto auto;
+    
+}
+.container3{
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.circleavatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.left-chat{
+    margin-left: 10px;
+    font-size: 10px;
+    width: auto;
+    height: 50px;
+    background-color: #85C5E8   ;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+}
+
+.left-chat p{
+    color: aliceblue;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+    padding-top: 5px;
+}
+.container4{
+    position: relative;
+    padding-top: 10px;
+    display: flex;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    justify-content: end;
+}
+.right-chat{
+    margin-right: 10px;
+    font-size: 10px;
+    width: auto;
+    height: 50px;
+    background-color: #1F4F70;
+    border-radius: 20px;
+    border-bottom-right-radius: 0;
+}
+
+.right-chat p{
+    color: aliceblue    ;
+    padding-left: 5px;
+    padding-right: 5px;
+    justify-content: center;
+    padding-top: 5px;
+}
+.container5{
+    bottom:0px;
+  background-color: white;
+  height: 80px;
+  width: 100%;
+ border-radius: 10px;
+}
+.container5 input {
+    border-radius: 20px;
+    outline: 0;
+    background: #F2F2F2;
+    width: 50%;
+    border: 0;
+    margin-top: 15px;
+    padding: 15px;
+    margin-left: 25%;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+a:link { 
+    text-decoration: none; 
+}
+
+
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+}
+.Judul{
+    padding-left: 10px;
+}
+.Judul p{
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.Judul p span{
+    font-size: 40px;
+}
+
+#Icon{
+    height: 50px;
+    margin-left: 10px;
+}
+
+

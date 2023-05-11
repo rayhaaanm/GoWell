@@ -1,0 +1,251 @@
+
+body{
+    height: 100% ;
+    width: 100%;
+    background-color: gray;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.Container{
+    display: flex; 
+    flex-direction: row;
+    align-content: flex-start;
+}
+.container2{
+    width: 100%;
+    position: absolute;
+    left: 150px;
+    top: 0;
+}
+.sidebar{
+    background-color: white;
+    border-radius: 10px; 
+    height: 65%; 
+    width: 300px;
+    position: fixed;
+}
+.sidebar_menu button{
+    margin-top: 10px;
+    border-radius: 20px;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    color: #1F4F70;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sidebar_menu button:hover,.form button:active,.form button:focus {
+    background: #57B9D4;
+  }
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar_menu{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+    
+}
+.Judul{
+    padding-left: 10px;
+}
+.Judul p{
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.Judul p span{
+    font-size: 40px;
+}
+
+#Icon{
+    height: 50px;
+    margin-left: 10px;
+}
+a:link { 
+    text-decoration: none; 
+}
+
+.blank{
+    width: 76%; 
+    box-sizing: border-box;
+    height: auto;
+    background-color: white; 
+    border-radius: 10px; 
+    flex-direction: row;
+    margin-left: 180px;
+    margin-right: 40px;
+}
+
+.blank p{
+    font-weight: bold;
+    color: #1F4F70;
+    font-size: 30px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.profile{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+
+}
+.profile-picture{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    margin-left: 10px;
+    object-fit: cover;
+
+}
+
+.profile-desc{
+
+    color: #1F4F70;
+    height: 50px;
+    width: 300px;
+    margin-left: 40px;
+    margin-top: 60px;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+.profile-column{
+    display: flex;
+    flex-direction: column;
+}
+.profile-button{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+}
+.profile-button .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+}
+
+.profile-button .button p{
+    color: #fff;
+    font-size: 12px;
+}
+#edit-photo{
+    background-color: #57B9D4;
+}
+#Log-Out{
+    background-color: #1F4F70;
+}
+.blank span{
+    font-weight: bold;
+    color: #1F4F70;
+    font-size: 25px;
+    margin-left: 10px;
+}
+.edit-profile{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    
+}
+.edit-profile input{
+    background-color: #D9D9D9;
+    border: #D9D9D9;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #838383;
+    font-weight: 5px;
+}
+
+.edit-profile img{
+    height: 30px;
+    margin-left: 10px;
+}
+
+.edit-profile span{
+    font-weight: 12px;
+    color: black;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+.pop-up {
+    position: absolute;
+    margin-left: 300px;
+    margin-top: 100px;
+    display: none;
+    padding-top: 20px;
+    width: 800px;
+    height: 500px;
+    border-radius: 30px;
+    background-color: white;
+
+}
+
+.pop-up p{
+    font-weight: bold;
+    font-size: 30px;
+    color: #1F4F70;
+}
+
+.pop-up-button{
+    height: 30px;
+    width: 600px;
+    color: #fff;
+    padding-top: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input[id="upload"]{
+    margin-top: 30px;
+    display: none;
+}
+#upload-photo{
+    font-size: 17px;
+    padding-top: 5px;
+    height: 40px;
+    border: none;
+    background-color: #57B9D4;
+}
+#delete-photo{
+    background-color: #838383;
+
+}
+#save-photo{
+    background-color: #1F4F70;
+    margin-top: 50px;
+}
+.bg{
+    display: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,.4);
+}

@@ -1,0 +1,219 @@
+
+body{
+    height: 100% ;
+    width: 100%;
+    background-color: gray;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.Container{
+    display: flex; 
+    flex-direction: row;
+    align-content: flex-start;
+}
+.container2{
+    width: 75.5%;
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+.sidebar{
+    background-color: white;
+    border-radius: 10px; 
+    height: 65%; 
+    width: 300px;
+    position: fixed;
+}
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.sidebar_menu{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+    
+}
+.sidebar_menu button{
+    margin-top: 10px;
+    border-radius: 20px;
+    outline: 0;
+    background: transparent;
+    width: 100%;
+    border: 0;
+    padding: 5px;
+    color: #1F4F70;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sidebar_menu button:hover,.form button:active,.form button:focus {
+    background: #57B9D4;
+  }
+.sidebar_setting{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
+}
+.sidebar_setting p {
+    position: relative;
+    top: -10px;
+    font-size: 20px;
+}
+.blank{
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    position: absolute;
+    width: 99%; 
+    box-sizing: border-box;
+    height: auto;
+    background-color: white; 
+    border-radius: 10px; 
+    flex-direction: column;
+    margin-left: 180px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+}
+.shape{
+    width: 400px;
+    height: 360px;
+    background-color:white;
+    border-radius: 10px;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.shape2{
+    display: flex;
+    flex-direction: row;
+    width: 94%;
+    height: 390px;
+    background-color: #57B9D4;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.shape3{
+    width: 200px;
+    height: 350px;
+    background-color:transparentppp;
+    border-radius: 10px;
+    margin-left: 130px;
+    margin-top: 20px;
+}
+.column{
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+.column p{
+    font-weight: bold;
+    color: #1F4F70; 
+    margin-left: 0;
+}
+.column input {
+    border-radius: 10px;
+    outline: 0;
+    background: #f2f2f2;
+    width: 60%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  .column textarea{
+    font-family: 'Montserrat', sans-serif;
+    pointer-events: none;
+    border-radius: 10px;
+    width: 400px;
+  }
+.button :hover{
+    background-color: #57B9D4;
+
+}
+
+.recommend {
+    font-weight: bold;
+    color: #1F4F70;
+    margin-left: 90px;
+    size: 25px;
+}
+.input {
+    text-align: center;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+a:link { 
+    text-decoration: none; 
+}
+
+
+
+.Menu{
+    display: flex;
+    flex-direction: column;
+}
+.Judul{
+    padding-left: 10px;
+}
+.Judul p{
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+.Judul p span{
+    font-size: 40px;
+}
+.trivia span{
+    font-weight: bold;
+    color: #1F4F70;
+}
+.trivia{
+    margin-left: 90px;
+    size: 20px;
+}
+
+#Icon{
+    height: 50px;
+    margin-left: 10px;
+}
+#Hasil-hitung{
+    margin-left: 160px;
+    font-size: 30px;
+}
+#Hasil-reset{
+    margin-left: 150px;
+    margin-top: 10px;
+}
+#gambar{
+    margin-left: 43%;
+    margin-right: 50%;
+}
+#Count{
+    background-color: #57B9D4;
+    color: #FFFFFF;
+    margin-top: 40px;
+}
+
+#Hitung-reset{
+    background-color: grey;
+    color: #FFFFFF;
+}
