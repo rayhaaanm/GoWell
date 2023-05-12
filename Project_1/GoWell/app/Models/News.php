@@ -42,16 +42,10 @@ class News
         ]
         ];
     public static function all(){
-        return self ::$news_post;
+        return collect(self ::$news_post);
     }
     public static function find($slug){
-        $articles = self ::$news_post;
-        $new_article = [];
-        foreach ($articles as $n){
-            if($n["slug"] === $slug){
-                $new_article = $n;
-            }
-        }
-        return $new_article;
+        $articles = static ::all();
+        return $articles->firstWhere('slug',$slug);
     }
 }

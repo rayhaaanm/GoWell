@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
 use App\Models\News;
 use Illuminate\Support\Facades\Route;
 
@@ -33,22 +34,9 @@ Route::get('/analytics', function () {
 Route::get('/login', function () {
     return view('login');
 });
-Route::get('/news', function () {
-    return view('news',[
-        'halaman' => 'GoWell : News',
-        'css' => 'news.css',
-        'Articles' => News::all()
+Route::get('/news', [ArticleController::class, 'index']);
 
-    ]);
-});
-Route::get('/news/{slug}', function($slug){
-    return view('DetailArticle',[
-        'halaman' => 'GoWell : News',
-        'css' => 'detail.css',
-        'Article' => News::find($slug),
-    ]);
-
-});
+Route::get('/news/{slug}', [ArticleController::class, 'Detail']);
 Route::get('/profile', function () {
     return view('profile',[
         'halaman' => 'GoWell : Profile',

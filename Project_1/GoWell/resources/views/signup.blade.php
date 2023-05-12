@@ -15,7 +15,7 @@
     <div class="SignUp-page">
         <div class="form">
           <div class="close-btn">
-            <a href="login.html">&#10006;</a>
+            <a href="/login">&#10006;</a>
           </div>
             <div class="GoWell">
                 <span style="color: #1F4F70;">Sign</span><span style="color: #57B9D4;">Up</span>
