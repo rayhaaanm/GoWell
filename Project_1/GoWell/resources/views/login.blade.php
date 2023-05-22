@@ -15,15 +15,16 @@
     <div class="login-page">
         <div class="form">
           <div class="close-btn">
-            <a href="index.html">&#10006;</a>
+            <a href="/">&#10006;</a>
           </div>
             <div class="GoWell">
                 <span style="color: #1F4F70;">Go</span><span style="color: #57B9D4;">Well</span>
             </div>
-          <form class="login-form">
-            <input type="text" placeholder="username" id="name"/>
-            <input type="password" placeholder="password" id="pass"/>
-            <button type="button" onclick="validate()">login</button>
+          <form class="login-form" action="/login" method="post">
+            @csrf
+            <input type="text" placeholder="email" id="name" name="email"/>
+            <input type="password" placeholder="password" id="pass" name="password"/>
+            <button type="submit" onclick="validate()">login</button>
             <p class="message">Not registered? <a href="/register">Create an account</a></p>
           </form>
         </div>

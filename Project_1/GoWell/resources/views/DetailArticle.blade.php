@@ -8,19 +8,19 @@
        
         <center>
             <h1>
-                {{ $Article["title"] }}
+                {{ $Article->title }}
             </h1>
             <h5>
-                Published {{ $Article["tanggal"] }}
+                Published {{ $Article->tanggal }}
             
             </h5>
             <div class="penulis">
-                {{ $Article["author"] }}
+                {{ $Article->author }}
             </div>
-            <img src="{{ asset($Article["cover"]) }}" alt=""> 
+            <img src="{{ asset($Article->cover) }}" alt=""> 
             <br>
             <div class="body">
-                {{ $Article["body"] }}
+                {{ $Article->body }}
             </div>
             
         </center>

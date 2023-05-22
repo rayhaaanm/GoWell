@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\RegisterController;
 use App\Models\News;
 use Illuminate\Support\Facades\Route;
 
@@ -31,9 +33,8 @@ Route::get('/analytics', function () {
         'css' => 'analytics.css'
     ]);
 });
-Route::get('/login', function () {
-    return view('login');
-});
+Route::get('/login', [LoginController::class,'index']);
+Route::post('/login', [LoginController::class,'auth']);
 Route::get('/news', [ArticleController::class, 'index']);
 
 Route::get('/news/{slug}', [ArticleController::class, 'Detail']);
@@ -51,9 +52,8 @@ Route::get('/setting', function () {
         'Nama' => 'Lalisa Manoban'
     ]);
 });
-Route::get('/register', function () {
-    return view('signup');
-});
+Route::get('/register', [RegisterController::class,'index']);
+Route::post('/register', [RegisterController::class,'store']);
 Route::get('/support', function () {
     return view('support',[
         'halaman' => 'GoWell : Support',

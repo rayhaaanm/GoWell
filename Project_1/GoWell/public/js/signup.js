@@ -58,6 +58,7 @@ function validate(){
             }).then((result) => {
                 if (result.isConfirmed) {
                 window.location.href="/login";
+                form.submit;
                 }
         })
 }

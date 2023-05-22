@@ -20,13 +20,14 @@
             <div class="GoWell">
                 <span style="color: #1F4F70;">Sign</span><span style="color: #57B9D4;">Up</span>
             </div>
-          <form class="SignUp-form">
-            <input type="text" placeholder="Full Name" id="name"/>
-            <input type="text" placeholder="Username" id="user"/>
-            <input type="text" placeholder="Email" id="email"/>
-            <input type="password" placeholder="Password" id="pass"/>
+          <form class="SignUp-form" action="/register" method="post" >
+            @csrf
+            <input type="text" name="fullname" placeholder="Full Name" id="name"/>
+            <input type="text" name="username" placeholder="Username" id="user"/>
+            <input type="text" name="email"placeholder="Email" id="email"/>
+            <input type="password" name="password" placeholder="Password" id="pass"/>
             <input type="password" placeholder="Confirm Password" id="repass"/>
-            <button type="button" onclick="validate()">Sign Up</button>
+            <button type="submit" onclick="validate()">Sign Up</button>
           </form>
         </div>
       </div>

@@ -11,15 +11,17 @@
         <div class="box-text">
             <div class = "cont-dokter">
                 <div class = "nama-dokter"> 
-                    <p> Dr. Rahmat Kurniawan </p>
+                    <p> Fadila Aulia </p>
                 </div>
                 <div class = "jenis-dokter"> 
                     <p> Dokter Umum </p>
                 </div>
-                <div class = "cont-chat"> 
-                    <button class = "isi-contchat"> 
-                    Chat Dokter
-                </button>
+                <div class = "cont-chat">
+                    <a href="https://wa.me/6282133432367">
+                        <button class = "isi-contchat" > 
+                            Chat Dokter
+                        </button>
+                    </a>
             </div>
         </div>
     </div>
@@ -30,15 +32,17 @@
         <div class="box-text">
             <div class = "cont-dokter">
                 <div class = "nama-dokter"> 
-                    <p> Dr. Rahmat Kurniawan </p>
+                    <p> Fadila Aulia </p>
                 </div>
                 <div class = "jenis-dokter"> 
                     <p> Dokter Umum </p>
                 </div>
-                <div class = "cont-chat"> 
-                    <button class = "isi-contchat"> 
-                    Chat Dokter
-                </button>
+                <div class = "cont-chat">
+                    <a href="https://wa.me/6282133432367">
+                        <button class = "isi-contchat" > 
+                            Chat Dokter
+                        </button>
+                    </a>
             </div>
         </div>
 </div>
