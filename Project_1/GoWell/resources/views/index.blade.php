@@ -121,7 +121,7 @@
     <div class="section-4" id="about-us">
         <div class="about-us-text">
             <h1>About Us</h1>
-            Muammar Qois Al Qorni dan Rayhan Azazaka Firdaus Mahasiswa S-1 <br> Sistem Informasi 
+            Muammar Qois Al Qorni dan Rayhan Azazaka Firdaus Mahasiswa <br> S-1 Sistem Informasi 
             Universitas Airlangga. Projek Pemrograman Website <br> (Praktikum) dengan Dosen Pengampu Bapak Faried Effendy
         </div>
         <img  src="./images/bg-about-us.svg">
