@@ -5,7 +5,7 @@
                 <img src="./images/lisa.jpg" class="profile-picture">
                 <div class="profile-column">
                     <div class="profile-desc">
-                        {{$Nama}}
+                        {{ $user->fullname }}
                     </div>
                     <div class="profile-button">
                         <a href="/setting">

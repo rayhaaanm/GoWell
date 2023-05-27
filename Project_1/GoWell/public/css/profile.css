@@ -1,47 +1,32 @@
-body {
-    height: 100%;
+
+body{
+    height: 100% ;
     width: 100%;
-    background-color: gray;
+    background-color: aliceblue;
     overflow-x: hidden;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
-.Container {
-    display: flex;
+.Container{
+    display: flex; 
     flex-direction: row;
     align-content: flex-start;
 }
-.container2 {
-    width: 75.5%;
+.container2{
+    width: 100%;
     position: absolute;
     left: 150px;
     top: 10px;
 }
-.sidebar {
+.sidebar{
     background-color: white;
-    border-radius: 10px;
-    height: 65%;
-    width: 300px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    height: 90%; 
+    width: 21%;
     position: fixed;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.sidebar-nav {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-
-.sidebar-nav li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.sidebar_menu {
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    list-style: none;
-}
-.sidebar_menu button {
+.sidebar_menu button{
     margin-top: 10px;
     border-radius: 20px;
     outline: 0;
@@ -49,38 +34,47 @@ body {
     width: 100%;
     border: 0;
     padding: 5px;
-    color: #1f4f70;
+    color: #1F4F70;
     font-size: 14px;
     cursor: pointer;
     font-weight: bold;
     font-size: 20px;
 }
-.sidebar_menu button:hover,
-.form button:active,
-.form button:focus {
-    background: #57b9d4;
+.sidebar_menu:hover,.form sidebar_menu:active,.form sidebar_menu:focus {
+    background: #57B9D4;
+    border-radius: 20px;
+    width: 90%;
+  }
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
-.sidebar_setting {
+.sidebar_menu{
     font-weight: bold;
     display: flex;
     flex-direction: row;
     align-content: center;
     list-style: none;
-}
-.sidebar_setting p {
-    position: relative;
-    top: -10px;
-    font-size: 20px;
+    
 }
 .box {
-    width: 100%;
+    width: 76%;
     box-sizing: border-box;
     height: 1000px;
     background-color: white;
-    border-radius: 10px;
     display: flex;
     flex-direction: column;
     margin-left: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
 }
 a:link {
     text-decoration: none;

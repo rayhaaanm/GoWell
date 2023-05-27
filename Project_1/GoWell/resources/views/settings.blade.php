@@ -2,12 +2,12 @@
 @section('page')
 <script src="./js/setting.js"></script>
     <div class="blank">
-        <p>User Settings</p>
+        <p id="setting">User Settings</p>
         <div class="profile">
             <img class="profile-picture" id="profile-picture"src="./images/lisa.jpg" >
             <div class="profile-column">
             <div class="profile-desc">
-                    {{$Nama}}
+                    {{$user->fullname}}
             </div>
             <div class="profile-button">
                 <a href="#" onclick="OpenForm()" >
@@ -16,12 +16,13 @@
                         <p>Edit Photo</p>
                     </div>
                 </a>
-                <a href="/" >
-                    <div class="button" id="Log-Out">
-                        <img src="./images/out.png" >
-                        <p>Log Out</p>
-                    </div>
-                </a>
+                <form action="/logout" method="post" >
+                    @csrf
+                    <button class="button" type="submit" id="Log-Out">
+                            <img src="./images/out.png" >
+                            <p>Log Out</p>
+                    </button>
+                </form>
             </div>
         </div>
 
