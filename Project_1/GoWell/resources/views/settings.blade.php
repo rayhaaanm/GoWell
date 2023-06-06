@@ -4,7 +4,7 @@
     <div class="blank">
         <p id="setting">User Settings</p>
         <div class="profile">
-            <img class="profile-picture" id="profile-picture"src="./images/lisa.jpg" >
+            <img class="profile-picture" id="profile-picture"src="{{ asset($user->profile_picture) }}" >
             <div class="profile-column">
             <div class="profile-desc">
                     {{$user->fullname}}
@@ -55,7 +55,7 @@
     <div class="pop-up" id="pop-up">
         <center>
             <p>Edit Profile Photo</p>
-            <img class="profile-picture" id="profile-picture-edit" src="./images/lisa.jpg" >
+            <img class="profile-picture" id="profile-picture-edit" src="{{ asset($user->profile_picture) }}" >
             <button class="pop-up-button" id="upload-photo" onclick="OpenUpload()">Upload Photo</button>
             
             <div class="pop-up-button" id="delete-photo">

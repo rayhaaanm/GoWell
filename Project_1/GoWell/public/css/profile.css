@@ -1,4 +1,11 @@
 
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
+
+}
 body{
     height: 100% ;
     width: 100%;
@@ -140,6 +147,7 @@ a:link {
     height: 30px;
     margin-right: 20px;
     border-radius: 10px;
+    padding-top: 10px;
     border-color: transparent;
     background-color: #57b9d4;
 }
@@ -152,10 +160,60 @@ a:link {
 }
 
 .blue-box {
+    display: flex;
+    flex-direction: row;
     margin-top: 20px;
     margin-left: 30px;
     width: 960px;
-    height: 300px;
+    height: auto;
     border-radius: 30px;
     background-color: #57b9d4;
+}
+.data_shape{
+    width: 200px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;  
+}
+.column p{
+    font-weight: bold;
+    color: #57b9d4;
+}
+#jenis{
+    font-size: 25px;
+    margin-bottom: 0;
+}
+#angka{ 
+    border: none;
+    text-align: center;
+    width: 100%;
+    color: #57b9d4;
+    font-weight: bold;
+    font-size: 90px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#angka:focus{
+    outline: none;
+}
+#periode{
+    width: 80%;
+    color: #57b9d4;
+    text-align: center;
+    margin-bottom: 10px;
+    border: 1px solid #57B9D4;
+    box-shadow: none;
+    border-radius: 10px;
+}
+#periode:focus{
+    outline: none;
 }

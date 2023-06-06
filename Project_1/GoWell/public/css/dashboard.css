@@ -1,4 +1,10 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    outline: none;
 
+}
 body{
     height: 100% ;
     width: 100%;
@@ -75,18 +81,21 @@ body{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
+    padding-bottom: 20px;
 }
 .container3{
     display: flex;
     padding-left: 10px;
+    margin-bottom: 20px;
 }
 .data_shape{
     width: 200px;
-    height: 250px;
+    height: auto;
     background-color: #57B9D4;
     border-radius: 10px;
     margin-left: 30px;
     margin-top: 20px;
+    padding-bottom: 20px;
 }
 .column{
     display: flex;
@@ -139,4 +148,7 @@ a:link {
 }
 #satuan{
     font-size: 20px;
+}
+form select{
+    border-radius: 5px;
 }

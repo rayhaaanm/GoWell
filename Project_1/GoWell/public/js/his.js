@@ -2,6 +2,10 @@ const ctx = document.getElementById('histogram1').getContext('2d');
 const ctx2 = document.getElementById('histogram2').getContext('2d');
 const ctx3 = document.getElementById('histogram3').getContext('2d');
 const ctx4 = document.getElementById('histogram4').getContext('2d');
+var tahunGlucose = document.getElementById('Glucose').value;
+var tahunKolesterol = document.getElementById('Kolesterol').value;
+var tahunBloodPress = document.getElementById('BloodPress').value;
+var tahunUridAcid = document.getElementById('UridAcid').value;
 const ChartOptions = {
   scales: {
     indexAxis: 'y',
@@ -26,6 +30,8 @@ const ChartOptions = {
   }
 };
 
+
+var GlucoseData = `SELECT * FROM glucoses WHERE YEAR(Periode) = ${tahunGlucose} AND MONTH(Periode) BETWEEN 1 AND 12`;
 var GlucoseNormal = {
   type: 'line',
   label: 'Kadar Glukosa Normal',
@@ -63,7 +69,7 @@ var AcidNormal = {
   var Glucose = {
     type: 'bar',
     label: 'Kadar Glukosa',
-    data: [120, 50, 40, 36, 120,200,150,70,190,130,100,150],
+    data: GlucoseData,
     backgroundColor: '#6CBDCB',
   }
 var Kolesterol = {

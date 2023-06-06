@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $guarded = [
-        'id'
+        'id',
     ];
 
     /**
@@ -39,4 +39,19 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    public function glucose(){
+        return $this->hasMany(Glucose::class);
+    }
+
+    public function kolesterol(){
+        return $this->hasMany(Kolesterol::class);
+    }
+
+    public function bloodpress(){
+        return $this->hasMany(BloodPress::class);
+    }
+
+    public function uridacid(){
+        return $this->hasMany(UridAcid::class);
+    }
 }
