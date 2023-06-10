@@ -6,10 +6,7 @@ function CloseForm(){
     document.getElementById("pop-up").style.display = "none";
     document.getElementById("bg").style.display = "none";
 }
-function OpenUpload(){
-    var input = document.getElementById('upload');
-    input.click();
-}
+
 
 function EditProfile(event){
     var image = document.getElementById('profile-picture-edit');

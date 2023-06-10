@@ -1,7 +1,5 @@
 *{
     font-family: 'Montserrat', sans-serif;
-    padding: 0;
-    margin: 0;
     outline: none;
 
 }
@@ -10,7 +8,6 @@ body{
     width: 100%;
     background-color: aliceblue;
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif;
 }
 .Container{
     display: flex; 
@@ -24,15 +21,32 @@ body{
     top: 0;
 }
 .sidebar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
     background-color: white;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    height: 65%; 
-    width: 300px;
+    height: 80%; 
+    width: 17.5%;
     position: fixed;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    left: 0;
 }
-.sidebar_menu button{
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .sidebar_menu{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
     margin-top: 10px;
     border-radius: 20px;
     outline: 0;
@@ -45,30 +59,37 @@ body{
     cursor: pointer;
     font-weight: bold;
     font-size: 20px;
-}
-.sidebar_menu:hover,.form .sidebar_menu:active,.form .sidebar_menu:focus {
-    background: #57B9D4;
-    border-radius: 20px;
-    width: 90%;
-  }
-.sidebar-nav {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-.sidebar-nav li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-}
-.sidebar_menu{
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    list-style: none;
+    padding-bottom: 0;
     
+}
+a{ 
+    text-decoration: none; 
+    color: #1F4F70;
+}
+a:link{ 
+    text-decoration: none; 
+    color: #1F4F70;
+}
+a:hover{ 
+    text-decoration: none; 
+    color: white;
+}
+.sidebar_menu:hover,.form sidebar_menu:active,.form sidebar_menu:focus {
+    background: #57B9D4;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10px;
+    color: white;
+  }
+.sidebar_menu i{
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+
+#setting{
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 .Judul{
     padding-left: 10px;
@@ -132,7 +153,7 @@ a:link {
 
     color: #1F4F70;
     height: 50px;
-    width: 300px;
+    width: auto;
     margin-left: 40px;
     margin-top: 60px;
     font-size: 25px;
@@ -155,6 +176,7 @@ a:link {
     align-items: center;
     width: 100px;
     height: 30px;
+    padding-left: 0;
     margin-right: 20px;
     border-radius: 10px;
     border-color: transparent;
@@ -162,12 +184,21 @@ a:link {
 
 .profile-button .button p{
     color: #fff;
+    padding-top: 5px;
     font-size: 12px;
 }
 #edit-photo{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    padding-top: 0;
+    font-weight: bold;
+    color: #fff;
+    font-size: 13px;
     background-color: #57B9D4;
 }
 #Log-Out{
+    color: #fff;
     background-color: #1F4F70;
 }
 .blank span{
@@ -182,6 +213,17 @@ a:link {
     margin-left: 10px;
     
 }
+.edit-profile .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin-right: 20px;
+    border-radius: 10px;
+    border-color: transparent;
+}
 .edit-profile input{
     background-color: #D9D9D9;
     border: #D9D9D9;
@@ -191,54 +233,14 @@ a:link {
     border-radius: 5px;
     font-size: 15px;
     color: #838383;
+    margin-right: 20px;
     font-weight: 5px;
+    text-align: center;
 }
 
-.edit-profile img{
-    height: 30px;
-    margin-left: 10px;
-}
 
-.edit-profile span{
-    font-weight: 12px;
-    color: black;
-    font-size: 25px;
-    margin-left: 10px;
-}
 
-.pop-up {
-    position: absolute;
-    margin-left: 300px;
-    margin-top: 100px;
-    display: none;
-    padding-top: 20px;
-    width: 800px;
-    height: 500px;
-    border-radius: 30px;
-    background-color: white;
 
-}
-
-.pop-up p{
-    font-weight: bold;
-    font-size: 30px;
-    color: #1F4F70;
-}
-
-.pop-up-button{
-    height: 30px;
-    width: 600px;
-    color: #fff;
-    padding-top: 10px;
-    border-radius: 5px;
-    margin-top: 10px;
-    font-weight: 500;
-}
-
-input[id="upload"]{
-    margin-top: 30px;
-    display: none;
-}
 #upload-photo{
     font-size: 17px;
     padding-top: 5px;
@@ -261,6 +263,19 @@ input[id="upload"]{
     width: 100%;
     background: rgba(0,0,0,.4);
 }
-#setting{
+#settings{
     padding-top: 30px;
+}
+.form-group input{
+    background-color: #D9D9D9;
+    border: #D9D9D9;
+    margin-bottom: 20px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #838383;
+    font-weight: 5px;
+    margin-top: 10px;
+    text-align: center;
 }

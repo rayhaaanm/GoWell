@@ -7,6 +7,7 @@
                 <div class="column">
                     <center>
                         <p id="jenis">Glucose</p>
+
                         @if ($Glucose)
                             <p id="angka">{{ $Glucose->angka }}</p>
                         @else
@@ -26,7 +27,7 @@
                 </div>
             </div>
             <div class="bar">
-                <canvas id="histogram1" width="698" height="250"></canvas>
+                <canvas id="histogram1" width="698" height="250" aria-data="{{ $GlucoseData }}"></canvas>
             </div>
         </div>
         <div class="container3">
@@ -53,7 +54,7 @@
                 </div>
             </div>
             <div class="bar">
-                <canvas id="histogram2" width="698" height="250"></canvas>
+                <canvas id="histogram2" width="698" height="250"aria-data="{{ $KolesData }}"></canvas>
             </div>
         </div>
         <div class="container3">
@@ -81,7 +82,7 @@
 
             </div>
             <div class="bar">
-                <canvas id="histogram3" width="698" height="250"></canvas>
+                <canvas id="histogram3" width="698" height="250"aria-data="{{ $BloodData }}"></canvas>
             </div>
         </div>
         <div class="container3">
@@ -109,7 +110,7 @@
 
             </div>
             <div class="bar">
-                <canvas id="histogram4" width="698" height="250"></canvas>
+                <canvas id="histogram4" width="698" height="250"aria-data="{{ $UridData }}"></canvas>
             </div>
         </div>
     </div>

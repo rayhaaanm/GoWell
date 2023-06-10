@@ -11,6 +11,7 @@
 
     class AdminController extends Controller
     {
+        
         public function settings(){
             return view('adminsettings',[
                 'halaman' => 'GoWell : Admin Settings',
@@ -28,7 +29,8 @@
             return view('adminarticle',[
                 'halaman' => 'GoWell : Admin article',
                 'css' => 'adminarticle.css',
-                'News' => News::all()
+                'News' => News::all(),
+                'User' => Auth::user(),
             ]);
         }
         public function profile(){

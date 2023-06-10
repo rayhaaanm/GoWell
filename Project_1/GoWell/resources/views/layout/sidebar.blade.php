@@ -5,19 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ asset('css') }}/{{ $css }}">
+    
     <link href='//fonts.googleapis.com/css?family=Montserrat:thin,extra-light,light,100,200,300,400,500,600,700,800'
         rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{{ asset('css') }}/{{ $css }}">
 
     <title>{{ $halaman }}</title>
 </head>
 
 <body>
-    <script src="./js/setting.js"></script>
     <div class="Container">
         <aside class="sidebar">
             <ul class="sidebar-nav">
@@ -28,32 +27,38 @@
                     </p>
                 </li>
                 <li class="sidebar_menu">
-                    <img id="Icon" src="{{ asset('images/user_alt_fill.png') }}"> <a href="/profile"><button
-                            type="button"> Profile</button type="button"></a>
+                    <a href="/profile">
+                        <i class="bi bi-person-fill" style = "color: #1F4F70;;"></i>Profile
+                    </a>
 
                 </li>
                 <li class="sidebar_menu">
-                    <img id="Icon" src="{{ asset('images/darhboard.png') }}"> <a href="/dashboard"><button
-                            type="button"> Dashboard</button type="button"></a>
+                    <a href="/dashboard">
+                        <i class="bi bi-grid-fill" style = "color: #1F4F70;;"></i>Dashboard
+                    </a>
 
                 </li>
                 <li class="sidebar_menu">
-                    <img id="Icon"src="{{ asset('images/Chart.png') }}"> <a href="/analytics"><button
-                            type="button"> Analytics</button type="button"></a>
+                    <a href="/analytics">
+                        <i class="bi bi-file-bar-graph-fill" style = "color: #1F4F70;;"></i>Analytics
+                    </a>
 
                 </li>
                 <li class="sidebar_menu">
-                    <img id="Icon"src="{{ asset('images/Desk_alt.png') }}"> <a href="/news"><button
-                            type="button"> News</button type="button"></a>
+                    <a href="/news">
+                        <i class="bi bi-file-text-fill" style = "color: #1F4F70;;"></i>News
+                    </a>
 
                 </li>
                 <li class="sidebar_menu">
-                    <img id="Icon"src="{{ asset('images/Chat.png') }}"> <a href="/support"><button type="button">
-                            Support</button type="button"></a>
+                    <a href="/support">
+                        <i class="bi bi-chat-left-text-fill" style = "color: #1F4F70;;"></i>Support
+                    </a>
                 </li>
-                <li class="sidebar_menu">
-                    <img id="Icon"src="{{ asset('images/Setting_line.png') }}"> <a href="/setting"><button
-                            type="button"> Settings</button type="button"></a>
+                <li class="sidebar_menu" id="setting">
+                    <a href="/setting">
+                        <i class="bi bi-gear-fill" style = "color: #1F4F70;;"></i>Setting
+                    </a>
                 </li>
 
 

@@ -107,6 +107,16 @@ a:hover{
     margin-top: auto;
     margin-bottom: 20px;
 }
+#Log-Out{
+    font-weight: bold;
+    color: #FF4F00;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border-color: transparent;
+}
 .article-info{
     font-family: 'Montserrat', sans-serif;
     display: flex;

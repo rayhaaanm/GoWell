@@ -2,10 +2,10 @@ const ctx = document.getElementById('histogram1').getContext('2d');
 const ctx2 = document.getElementById('histogram2').getContext('2d');
 const ctx3 = document.getElementById('histogram3').getContext('2d');
 const ctx4 = document.getElementById('histogram4').getContext('2d');
-var tahunGlucose = document.getElementById('Glucose').value;
-var tahunKolesterol = document.getElementById('Kolesterol').value;
-var tahunBloodPress = document.getElementById('BloodPress').value;
-var tahunUridAcid = document.getElementById('UridAcid').value;
+const canvas1 = document.getElementById('histogram1');
+const canvas2 = document.getElementById('histogram2');
+const canvas3 = document.getElementById('histogram3');
+const canvas4 = document.getElementById('histogram4');
 const ChartOptions = {
   scales: {
     indexAxis: 'y',
@@ -24,14 +24,30 @@ const ChartOptions = {
     }],
     yAxes: [{
       ticks: {
-        beginAtZero: false
+        beginAtZero: true
       }
     }]
   }
 };
 
 
-var GlucoseData = `SELECT * FROM glucoses WHERE YEAR(Periode) = ${tahunGlucose} AND MONTH(Periode) BETWEEN 1 AND 12`;
+
+var GlucoseData = JSON.parse(canvas1.getAttribute('aria-data'));
+var KolesterolData = JSON.parse(canvas2.getAttribute('aria-data'));
+var BloodData = JSON.parse(canvas3.getAttribute('aria-data'));
+var UridData = JSON.parse(canvas4.getAttribute('aria-data'));
+if (GlucoseData.length === 1) {
+  GlucoseData.push(GlucoseData[0]);
+}
+if (KolesterolData.length === 1) {
+  KolesterolData.push(KolesterolData[0]);
+}
+if (UridData.length === 1) {
+  UridData.push(UridData[0]);
+}
+if (BloodData.length === 1) {
+  BloodData.push(BloodData[0]);
+}
 var GlucoseNormal = {
   type: 'line',
   label: 'Kadar Glukosa Normal',
@@ -66,27 +82,27 @@ var AcidNormal = {
 }
 
 
-  var Glucose = {
-    type: 'bar',
-    label: 'Kadar Glukosa',
-    data: GlucoseData,
-    backgroundColor: '#6CBDCB',
-  }
+var Glucose = {
+  type: 'bar',
+  label: 'Kadar Glukosa',
+  data: GlucoseData,
+  backgroundColor: '#6CBDCB',
+}
 var Kolesterol = {
   label: "Kadar Kolesterol",
-  data: [140, 60, 70, 50, 120,110,160,70,190,130,120,150],
+  data: KolesterolData,
   backgroundColor: '#6CBDCB',
 }
 
 var TekananDarah = {
   label: "Kadar Tekanan Darah",
-  data: [140, 60, 70, 50, 120,110,160,70,190,130,120,150],
+  data: BloodData,
   backgroundColor: '#6CBDCB',
 }
 
 var AsamUrat = {
   label: "Kadar Asam Urat",
-  data: [140, 60, 70, 50, 120,110,160,70,190,130,120,150],
+  data: UridData,
   backgroundColor: '#6CBDCB',
 }
 

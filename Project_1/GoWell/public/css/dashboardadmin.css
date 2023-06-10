@@ -84,6 +84,12 @@ a:hover{
     margin-left: 10px;
     color: white;
   }
+  .sidebar_menu :hover,.form sidebar_menu:active,.form sidebar_menu:focus {
+    background: #FFA300;
+    border-radius: 10px;
+    width: 80%;
+    color: white;
+  }
 .sidebar_menu i{
     padding-left: 30px;
     padding-right: 10px;
@@ -124,4 +130,14 @@ a:hover{
 #settings{
     margin-top: auto;
     margin-bottom: 20px;
+}
+#Log-Out{
+    font-weight: bold;
+    color: #FF4F00;
+}
+button{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    border-color: transparent;
 }

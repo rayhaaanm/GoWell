@@ -26,9 +26,7 @@
                     </p>
                 </li>
                 <li class="sidebar_menu">
-                    <a href="/">
-                        <i class="bi bi-grid-fill" style = "color: #FF4F00;"></i>Profile
-                    </a>
+                        <i class="bi bi-grid-fill" style = "color: #FF4F00;"></i>{{ $User->fullname }}
                     
                 </li>
                 <li class="sidebar_menu">
@@ -43,9 +41,13 @@
                     </a>
                 </li>
                 <li class="sidebar_menu" id="settings">
-                    <a href="/admin/settings">
-                        <i class="bi bi-gear" style = "color: #FF4F00;"></i>Settings
-                    </a>
+                    <form action="/logout" method="post" >
+                        @csrf
+                        <button class="button" type="submit" id="Log-Out">
+                            <i class="bi bi-box-arrow-in-right"></i>
+                                <p>Log Out</p>
+                        </button>
+                    </form>
                 </li>
             </ul>
         </aside>

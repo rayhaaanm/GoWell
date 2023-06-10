@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\UserController;
 use App\Models\News;
 use App\Models\User;
 use App\Models\UridAcid;
@@ -35,51 +36,26 @@ Route::get('/dashboard/UridAcid', [DashboardController::class,'UridAcid'])->midd
 Route::get('/dashboard/Glucose', [DashboardController::class,'Glucose'])->middleware('auth');
 Route::get('/dashboard/Kolesterol', [DashboardController::class,'Kolesterol'])->middleware('auth');
 Route::get('/dashboard/BloodPress', [DashboardController::class,'BloodPress'])->middleware('auth');
-Route::get('/analytics', function () {
-    return view('analytics',[
-        'halaman' => 'GoWell : Analytics',
-        'css' => 'analytics.css'
-    ]);
-})->middleware('auth');
+Route::get('/analytics', [UserController::class, 'analytics'])->middleware('auth');
 Route::get('/login', [LoginController::class,'index'])->name('login')->middleware('guest');;
 Route::post('/login', [LoginController::class,'auth']);
 Route::post('/logout', [LoginController::class,'logout']);
 Route::get('/news', [ArticleController::class, 'index'])->middleware('auth');
-
-
 Route::get('/news/{slug}', [ArticleController::class, 'Detail'])->middleware('auth');
-Route::get('/profile', function () {
-    return view('profile',[
-        'halaman' => 'GoWell : Profile',
-        'css' => 'profile.css',
-        'user' => Auth::user(),
-    ]);
-})->middleware('auth');
+Route::get('/profile', [UserController::class, 'profile'])->middleware('auth');
 Route::post('/profile/glucose', [GlucoseController::class,'store'])->middleware('auth');
 Route::post('/profile/kolesterol', [KolesterolController::class,'store'])->middleware('auth');
 Route::post('/profile/uridacid', [UridAcidController::class,'store'])->middleware('auth');
 Route::post('/profile/bloodpress', [BloodPressController::class,'store'])->middleware('auth');
-Route::get('/setting', function () {
-    return view('settings',[
-        'halaman' => 'GoWell : Settings',
-        'css' => 'settings.css',
-        'user' => Auth::user(),
-    ]);
-})->middleware('auth');
+Route::get('/setting', [UserController::class, 'setting'])->middleware('auth');
+Route::put('/setting/editphoto/{id}', [UserController::class, 'editPhoto'])->middleware('auth');
+Route::put('/setting/editname/{id}', [UserController::class, 'editName'])->middleware('auth');
+Route::put('/setting/editemail/{id}', [UserController::class, 'editEmail'])->middleware('auth');
+Route::put('/setting/editpass/{id}', [UserController::class, 'editPass'])->middleware('auth');
 Route::get('/register', [RegisterController::class,'index'])->middleware('guest');;
 Route::post('/register', [RegisterController::class,'store']);
-Route::get('/support', function () {
-    return view('support',[
-        'halaman' => 'GoWell : Support',
-        'css' => 'support.css'
-    ]);
-})->middleware('auth');
-Route::get('/admin', function(){
-    return view('admindashboard',[
-        'halaman' => 'GoWell : Admin',
-        'css' => 'dashboardadmin.css',
-    ]);
-})->middleware('admin');
+Route::get('/support', [UserController::class, 'support'])->middleware('auth');
+Route::get('/admin', [AdminController::class,'user'])->middleware('admin');
 Route::get('/admin/settings', [AdminController::class,'settings'])->middleware('admin');
 Route::get('/admin/news', [AdminController::class,'article'])->middleware('admin');
 Route::post('/admin/news', [AdminController::class,'store'])->middleware('admin');

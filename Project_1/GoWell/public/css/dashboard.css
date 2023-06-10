@@ -24,15 +24,32 @@ body{
     top: 10px;
 }
 .sidebar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
     background-color: white;
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
-    height: 90%; 
-    width: 21%;
+    height: 80%; 
+    width: 17.5%;
     position: fixed;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    left: 0;
 }
-.sidebar_menu button{
+.sidebar-nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  .sidebar_menu{
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    list-style: none;
     margin-top: 10px;
     border-radius: 20px;
     outline: 0;
@@ -45,30 +62,37 @@ body{
     cursor: pointer;
     font-weight: bold;
     font-size: 20px;
+    padding-bottom: 0;
+    
+}
+a{ 
+    text-decoration: none; 
+    color: #1F4F70;
+}
+a:link{ 
+    text-decoration: none; 
+    color: #1F4F70;
+}
+a:hover{ 
+    text-decoration: none; 
+    color: white;
 }
 .sidebar_menu:hover,.form sidebar_menu:active,.form sidebar_menu:focus {
     background: #57B9D4;
-    border-radius: 20px;
-    width: 90%;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10px;
+    color: white;
   }
-.sidebar-nav {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
-  
-.sidebar-nav li {
-    padding: 0;
-    margin: 0;
-    list-style: none;
+.sidebar_menu i{
+    padding-left: 30px;
+    padding-right: 10px;
 }
-.sidebar_menu{
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    list-style: none;
-    
+
+
+#setting{
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 .blank{
     width: 76%; 
@@ -132,6 +156,7 @@ a:link {
 .Judul p span{
     font-size: 40px;
 }
+
 
 #Icon{
     height: 50px;

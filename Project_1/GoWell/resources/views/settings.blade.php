@@ -1,8 +1,9 @@
 @extends('layout.sidebar')
 @section('page')
-<script src="./js/setting.js"></script>
+
+
     <div class="blank">
-        <p id="setting">User Settings</p>
+        <p id="settings">User Settings</p>
         <div class="profile">
             <img class="profile-picture" id="profile-picture"src="{{ asset($user->profile_picture) }}" >
             <div class="profile-column">
@@ -10,16 +11,14 @@
                     {{$user->fullname}}
             </div>
             <div class="profile-button">
-                <a href="#" onclick="OpenForm()" >
-                    <div class="button" id="edit-photo" >
-                        <img src="./images/pensil.png">
-                        <p>Edit Photo</p>
-                    </div>
-                </a>
-                <form action="/logout" method="post" >
+                <button type="button" class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" id="edit-photo">
+                    <i class="bi bi-pencil-fill"></i>
+                    Edit
+                  </button>
+                  <form action="/logout" method="post" >
                     @csrf
                     <button class="button" type="submit" id="Log-Out">
-                            <img src="./images/out.png" >
+                        <i class="bi bi-box-arrow-in-right"></i>
                             <p>Log Out</p>
                     </button>
                 </form>
@@ -28,18 +27,42 @@
 
         </div>
         <span>General Information</span>
+        <form action="/setting/editname/{{ $user->id }}" method="POST">
+            @csrf
+            @method('put')
         <div class="edit-profile">
-            <input type="text" name="Name">
-            <span>Edit Name</span>
+            <input type="text" name="name" value="{{ $user->fullname }}">
+            <button type="submit" class="button"  id="edit-photo">
+                <i class="bi bi-pencil-fill"></i>
+                Edit Name
+              </button>
         </div>
+    </form>
+        <form action="/setting/editemail/{{ $user->id }}" method="POST">
+            @csrf
+            @method('put')
         <div class="edit-profile">
-            <input type="email" name="email">
-            <span>Edit Name</span>
+            
+                <input type="email" name="email" value="{{ $user->email }}">
+                <button type="submit" class="button"  id="edit-photo">
+                    <i class="bi bi-pencil-fill"></i>
+                    Edit Email
+                  </button>
         </div>
-        <div class="edit-profile">
-            <input type="password" name="pass">
-            <span>Edit Name</span>
-        </div>
+    </form>
+</form>
+<form action="/setting/editpass/{{ $user->id }}" method="POST">
+    @csrf
+    @method('put')
+<div class="edit-profile">
+    
+        <input type="password" name="pass" value="{{ $user->password }}">
+        <button type="submit" class="button"  id="edit-photo">
+            <i class="bi bi-pencil-fill"></i>
+            Edit Pass
+          </button>
+</div>
+</form>
         </div>
 
 
@@ -52,11 +75,40 @@
         
     </div>
     <div class="bg" id="bg"></div>
-    <div class="pop-up" id="pop-up">
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <form action="/setting/editphoto/{{ $user->id }}" method="POST">
+                @csrf
+                @method('PUT')
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Edit Profile</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <center>
+                    <img class="profile-picture" id="profile-picture-edit" src="{{ asset($user->profile_picture) }}" >
+                    <div class="form-group">
+                        <input type="text" value="{{ $user->profile_picture }}" name="profile">
+                    </div>
+                </center>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" class="btn btn-primary">Save changes</button>
+            </div>
+        </form>
+          </div>
+        </div>
+      </div>
+      
+    {{-- <div class="pop-up" id="pop-up">
         <center>
             <p>Edit Profile Photo</p>
             <img class="profile-picture" id="profile-picture-edit" src="{{ asset($user->profile_picture) }}" >
-            <button class="pop-up-button" id="upload-photo" onclick="OpenUpload()">Upload Photo</button>
+            <form action="">
+                @csrf
+                <button class="pop-up-button" id="upload-photo" onclick="OpenUpload()">Upload Photo</button>
             
             <div class="pop-up-button" id="delete-photo">
                 Delete Photo
@@ -66,7 +118,8 @@
                     Save changes
                 </div>
             </a>
+            </form>
         </center>
         <input  id="upload" onchange="EditProfile(event)" type="file">
-    </div>
+    </div> --}}
 @endsection
