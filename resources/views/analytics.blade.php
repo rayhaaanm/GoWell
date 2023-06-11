@@ -32,12 +32,9 @@
                     </div>
 
             </div>
-                <img src="" height="200" name="gambar" width="150" id="gambar">
+                <img src="images/barbel.svg" height="200" name="gambar" width="150" id="gambar">
              <p class="recommend">Our recomendations</p>
              <p class="recommend">Understanding your result</p>
-             <p class="trivia"><span>Underweight</span><br>
-                Being underweight could be a sign you're not eating enough or you may be ill. If you're underweight, a GP can help.
-            </p>
             <p class="trivia"><span>Underweight</span><br>
                 Being underweight could be a sign you're not eating enough or you may be ill. If you're underweight, a GP can help.
             </p>

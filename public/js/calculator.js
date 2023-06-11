@@ -4,11 +4,11 @@ function hitungBeratBadanIdeal()
                 var BeratBadan = parseFloat(document.ffrom.Berat.value);
                 var hs = "";
                 img1 = new Image()
-                img1.src = 'images/Chart.png'
+                img1.src = 'images/balance.svg'
                 img2 = new Image()
-                img2.src = 'images/Chat.png'
+                img2.src = 'images/overweight.svg'
                 img3 = new Image()
-                img3.src = 'images/News.png'
+                img3.src = 'images/underweight.svg'
      
                 var Hitung = ((TinggiBadan - 100)-((TinggiBadan - 100)*(10/100)));
                 if (Hitung == BeratBadan){
