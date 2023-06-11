@@ -9,12 +9,17 @@
     <div class="user-header">
         <div class="jumlah-user">
             <div class="shape">
-                <div class="column">
-                    <center>
+                <div class="shape-logo">
+                  <i class="bi bi-person-fill width" id="logo-user"></i>
+                    {{-- <center>
                     Jumlah
                     <p id="angka">{{ $Users->count() }}</p>
                     Users
-                    </center>
+                    </center> --}}
+                </div>
+                <div class="deskripsi">
+                  Jumlah User <br>
+                  {{ $Users->count() }}
                 </div>
             </div>
         </div>

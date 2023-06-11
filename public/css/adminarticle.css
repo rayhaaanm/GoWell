@@ -140,10 +140,10 @@ table{
 .article-header{
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     height: 120px;
-    background-color: white; 
+    background-color: transparent; 
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin-top: 13px;
     margin-left: 130px;
     right: 0;
@@ -151,31 +151,45 @@ table{
     border-radius: 30px;
 } 
 .shape{
-    width: 100px;
+    width: auto;
     height: 100px;
-    background-color: #57B9D4;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
     margin-left: 30px;
     margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 20px;
 }
-.column{
-    font-weight: bold;
-    color: aliceblue;
+.shape-logo{
+    background-color: #FFA300;
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    justify-content: center;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;  
+    align-items: center;
 }
-
-.column p{
-    margin-bottom: 0;
+#logo-user{
+    color: white;
     font-size: 30px;
 }
+.deskripsi{
+    font-weight: bold;
+    height: 50px;
+}
 .add-article button{
-    background-color: #57B9D4;
+    height: 50px;
+    background-color: #FFA300;
     border-color: transparent;
+    border-radius: 10px;
 }
 .add-article button:hover,.add-article button:active,.add-article button:focus{
-    background-color: #57B9D4;
+    background-color: #FFA300;
     border-color: transparent;
 }
 .modal-title{

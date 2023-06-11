@@ -8,20 +8,25 @@
     @endif
     <div class="article-header">
         <div class="jumlah-article">
-            <div class="shape">
-                <div class="column">
-                    <center>
-                    Jumlah
-                    <p id="angka">{{ $News->count() }}</p>
-                    Article
-                    </center>
-                </div>
-            </div>
-        </div>
-        <div class="add-article">
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >
-                Add Article
-              </button>
+          <div class="shape">
+            <div class="add-article">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" >
+                  Add Article
+                </button>
+          </div>
+          <div class="shape-logo">
+            <i class="bi bi-layout-text-sidebar-reverse" id="logo-user"></i>
+              {{-- <center>
+              Jumlah
+              <p id="angka">{{ $Users->count() }}</p>
+              Users
+              </center> --}}
+          </div>
+          <div class="deskripsi">
+            Jumlah Article <br>
+            {{ $News->count() }}
+          </div>
+      </div>
         </div>
     </div>
     <div class="article-info">
