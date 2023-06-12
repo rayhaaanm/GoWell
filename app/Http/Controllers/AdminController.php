@@ -23,6 +23,7 @@
                 'halaman' => 'GoWell : Admin User',
                 'css' => 'adminuser.css',
                 'Users'=> User::all(),
+                'admin' => Auth::user(),
             ]);
         }
         public function article(){
@@ -31,6 +32,7 @@
                 'css' => 'adminarticle.css',
                 'News' => News::all(),
                 'User' => Auth::user(),
+                'admin' => Auth::user(),
             ]);
         }
         public function profile(){
@@ -67,7 +69,7 @@
             $News->excerpt = $request->input('excerpt');
             $News->slug = $request->input('slug');
             $News->cover = $request->input('cover');
-            $News->body = $request->input('body');
+            $News->body = $request->input('isi');
             $News->update();
             return redirect('/admin/news')->with('success', ' Article Has Been Updated');
         }

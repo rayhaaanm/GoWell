@@ -26,7 +26,7 @@
                     </p>
                 </li>
                 <li class="sidebar_menu">
-                        <i class="bi bi-grid-fill" style = "color: #FF4F00;"></i>{{ $User->fullname }}
+                        <i class="bi bi-grid-fill" style = "color: #FF4F00;"></i>{{ $admin->fullname }}
                     
                 </li>
                 <li class="sidebar_menu">

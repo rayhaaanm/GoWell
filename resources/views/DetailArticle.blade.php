@@ -19,8 +19,8 @@
             </div>
             <img src="{{ asset($Article->cover) }}" alt=""> 
             <br>
-            <div class="body">
-                {{ $Article->body }}
+            <div class="trix-content" id="body">
+                {!! $Article->body !!}
             </div>
             
         </center>

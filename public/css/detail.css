@@ -8,7 +8,7 @@
 body{
     height: 100% ;
     width: 100%;
-    background-color: gray;
+    background-color: white;
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
 }
@@ -21,6 +21,7 @@ body{
     width: 100%;
     position: absolute;
     left: 150px;
+    right: 0;
     top: 10px;
 }
 .sidebar{
@@ -94,6 +95,19 @@ a:hover{
     margin-top: auto;
     margin-bottom: 20px;
 }
+.blank{
+    width: 76%; 
+    box-sizing: border-box;
+    height: auto;
+    background-color: white; 
+    flex-direction: row;
+    right: 0;
+    margin-right: 0;
+    margin-left: 154px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
 
 
 .Menu{
@@ -149,8 +163,12 @@ center img {
     margin-bottom: 10px;
     font-weight: 600;
 }
-.body {
+#body {
     text-align: left;
-    margin-left: 5px;
+    width: auto;
+    margin-left: 20px;
     margin-right: 5px;
+}
+#text{
+    width: auto;
 }

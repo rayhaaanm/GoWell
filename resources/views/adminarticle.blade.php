@@ -108,9 +108,9 @@
                               @enderror
                             </div>
                             <div class="form-group">
-                              <label for="body" class="col-form-label">Content:</label>
-                              <input type="hidden" name="body" id="body">
-                              <trix-editor class="form-control " input="body" rows="4" cols="50" >{{ $New->body }}</trix-editor >
+                              <label for="isi" class="col-form-label">Content:</label>
+                              <input type="hidden" name="isi" id="isi">
+                              <trix-editor class="form-control " input="isi" rows="4" cols="50" >{{ $New->body }}</trix-editor >
                             </div>
                             <div class="form-group">
                               <label for="cover" class="col-form-label">Add image url:</label>
